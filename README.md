@@ -16,6 +16,7 @@ This makes it possible to combine:
 
 It was created mainly for chained long-form MiniMax H3 workflows.
 
+
 ## Installation
 
 Download or clone this repository into:
@@ -34,11 +35,13 @@ The folder should contain:
 
 Restart ComfyUI after installation.
 
+
 ## Node
 
 **MiniMax H3 Reference to Video + First Frame**
 
 The node is based on ComfyUI's built-in MiniMax H3 reference-to-video implementation, with additional first-frame conditioning.
+
 
 ## Tested use case
 
@@ -46,13 +49,23 @@ Used successfully for chained MiniMax H3 video generation with:
 
 - short reference-video conditioning
 - previous clip final frame as `first_frame`
-- hybrid FL2VA / Ref2VA models such as `minimax_h3_hybrid_fl2va_ref2va_b30-49-int8`
+- hybrid FL2VA / Ref2VA model:
+  [`minimax_h3_hybrid_fl2va_ref2va_b30-49-int8`](https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models)
+
+Model repository:
+
+[smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models](https://huggingface.co/smhfacct/Minimax-H3-fl2va-ref2va-hybrid-models)
+
+The custom node itself is not limited to this hybrid model.  
+This is simply the model used for the tested chained long-form workflow.
+
 
 ## Notes
 
 This is an experimental custom node and may depend on changes in ComfyUI's built-in MiniMax H3 implementation.
 
 If ComfyUI changes the internal MiniMax H3 node API, this node may also require an update.
+
 
 ## Credits
 
@@ -61,6 +74,7 @@ Based on / adapted from ComfyUI's MiniMax H3 implementation:
 https://github.com/Comfy-Org/ComfyUI
 
 Developed with assistance from ChatGPT.
+
 
 ## License
 
