@@ -1,13 +1,4 @@
 # MiniMax H3 Reference to Video + First Frame
-#
-# Based on / adapted from ComfyUI's MiniMax H3 nodes:
-# comfy_extras/nodes_minimax_h3.py
-#
-# Modified to add independent first-frame conditioning.
-#
-# License: GPL-3.0
-
-# MiniMax H3 Reference to Video + First Frame
 
 Experimental custom node for ComfyUI MiniMax H3.
 
